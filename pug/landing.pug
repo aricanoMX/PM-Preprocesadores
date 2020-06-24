@@ -1,0 +1,17 @@
+extend assets/components/plantilla.pug
+block contenidos
+  section.intro
+    .intro__imagen: img(src="images/imagen.png", alt="")
+    .intro__contenido
+      h2= titulos[0]
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum saepe doloribus porro, aliquam mollitia unde earum accusamus sint culpa nemo? Neque dolorum quidem soluta dolores vitae laboriosam assumenda nostrum harum.
+        span Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, architecto excepturi ipsa et tempore corrupti. Pariatur dolores, et quis accusantium non consequatur unde, aliquam quos maxime voluptatibus, voluptatem autem amet!
+      a.boton Leer Más
+  // esto de abajo es un loop o ciclo
+  //ul
+    //each titulo in titulos
+      //li= titulo
+  main.contenido
+    +caja('imagen.png',titulos[1],'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium tempora quibusdam placeat voluptatibus vero earum ipsa quas nam sequi voluptate, obcaecati esse vitae. Quia sunt delectus deserunt! Eius, cupiditate assumenda!')
+    +caja('imagen.png',titulos[2],'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium tempora quibusdam placeat voluptatibus vero earum ipsa quas nam sequi voluptate, obcaecati esse vitae. Quia sunt delectus deserunt! Eius, cupiditate assumenda!')
+    +caja('imagen.png',titulos[0],'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium tempora quibusdam placeat voluptatibus vero earum ipsa quas nam sequi voluptate, obcaecati esse vitae. Quia sunt delectus deserunt! Eius, cupiditate assumenda!')
